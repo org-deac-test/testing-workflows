@@ -8,244 +8,254 @@ jobs:
   node-version:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4.2.2
-      - uses: peter-evans/repository-dispatch@v1
-      - uses: peter-evans/repository-dispatch@v3
-      - uses: EndBug/add-and-commit@v4
-      - uses: EndBug/add-and-commit@v9
-      - uses: ncipollo/release-action@v1
-      - uses: machine-learning-apps/actions-app-token@0.21
-      - uses: peter-evans/repository-dispatch@v2
-      - uses: bridgecrewio/checkov-action@master
-      - uses: trstringer/manual-approval@v1
-      - uses: ad-m/github-push-action@master
-      - uses: stCarolas/setup-maven@v4.5
-      - uses: stCarolas/setup-maven@v5
-      - uses: sbt/setup-sbt@v1
-      - uses: peter-evans/create-pull-request@v3
-      - uses: repo-sync/pull-request@v2
-      - uses: EnricoMi/publish-unit-test-result-action@v1.25
-      - uses: dawidd6/action-download-artifact@v2
-      - uses: mikefarah/yq@master
-      - uses: winterjung/comment@v1
-      - uses: sonarsource/sonarqube-scan-action@master
-      - uses: peter-evans/create-pull-request@v7
-      - uses: vimtor/action-zip@v1
-      - uses: ibiqlik/action-yamllint@v3
-      - uses: kentaro-m/task-completed-checker-action@v0.1.0
-      - uses: wagoid/commitlint-github-action@v5
-      - uses: robinraju/release-downloader@v1.8
-      - uses: fjogeleit/yaml-update-action@main
-      - uses: sonarsource/sonarqube-quality-gate-action@master
-      - uses: stefanzweifel/git-auto-commit-action@v5
-      - uses: romeovs/lcov-reporter-action@v0.2.21
-      - uses: peter-evans/find-comment@v3
-      - uses: dorny/paths-filter@v3
-      - uses: meeDamian/github-release@v2.0.3
-      - uses: stCarolas/setup-maven@v4
-      - uses: peter-evans/create-or-update-comment@v4
-      - uses: mathieudutour/github-tag-action@v6.1
-      - uses: gsactions/commit-message-checker@v1
-      - uses: stCarolas/setup-maven@v4.2
-      - uses: peter-evans/create-or-update-comment@v1
-      - uses: gsactions/commit-message-checker@v2
-      - uses: dorny/test-reporter@v1
-      - uses: stCarolas/setup-maven@v4.4
-      - uses: thedoctor0/zip-release@0.7.6
-      - uses: peter-evans/create-pull-request@v5
-      - uses: robinraju/release-downloader@v1.9
-      - uses: cardinalby/git-tag-action@master
-      - uses: thedoctor0/zip-release@main
-      - uses: EnricoMi/publish-unit-test-result-action@v1.5
-      - uses: dev-drprasad/delete-tag-and-release@v1.1
-      - uses: dawidd6/action-send-mail@v6
-      - uses: dflook/terraform-fmt@v1
-      - uses: bridgecrewio/checkov-action@v12
-      - uses: thollander/actions-comment-pull-request@v2
-      - uses: mikepenz/release-changelog-builder-action@v5
-      - uses: shioyang/check-pr-labels-on-push-action@v1.0.3
-      - uses: montudor/action-zip@v1
-      - uses: mikepenz/action-junit-report@v3.8.0
-      - uses: peter-evans/find-comment@v1
-      - uses: peaceiris/actions-gh-pages@v3
-      - uses: peter-evans/find-comment@v2
-      - uses: srggrs/assign-one-project-github-action@1.2.0
-      - uses: hmarr/auto-approve-action@v4
-      - uses: xt0rted/pull-request-comment-branch@v2
-      - uses: pascalgn/automerge-action@v0.16.4
-      - uses: amannn/action-semantic-pull-request@v5
-      - uses: rogerluan/label-remover@v1.0.1
-      - uses: maxim-lobanov/setup-xcode@v1.6.0
-      - uses: peter-evans/close-pull@v3
-      - uses: venkatsarvesh/pr-tasks-completed-action@v1.0.0
-      - uses: robinraju/release-downloader@v1
-      - uses: mikepenz/release-changelog-builder-action@v4
-      - uses: juliangruber/merge-pull-request-action@v1
-      - uses: cicirello/jacoco-badge-generator@v2
-      - uses: thollander/actions-comment-pull-request@v3
-      - uses: terraform-linters/setup-tflint@v4
-      - uses: stefanzweifel/git-auto-commit-action@v4
-      - uses: benjefferies/branch-protection-bot@master
-      - uses: TimonVS/pr-labeler-action@v5
-      - uses: the-actions-org/workflow-dispatch@v4
-      - uses: pnpm/action-setup@v4
-      - uses: deployphp/action@v1
-      - uses: madrapps/jacoco-report@v1.6.1
-      - uses: marocchino/sticky-pull-request-comment@v2.8.0
-      - uses: flowwer-dev/pull-request-stats@master
-      - uses: hmarr/auto-approve-action@v3
-      - uses: mikepenz/action-junit-report@v3
-      - uses: EndBug/add-and-commit@v8
-      - uses: act10ns/slack@v1
-      - uses: juliangruber/approve-pull-request-action@v1
-      - uses: peter-evans/create-pull-request@v6
-      - uses: cycjimmy/semantic-release-action@v4
-      - uses: peter-evans/create-pull-request@v4
-      - uses: joelwmale/webhook-action@2.4.1
-      - uses: Sibz/github-status-action@v1
-      - uses: android-actions/setup-android@v3
-      - uses: cloudflare/wrangler-action@v3
-      - uses: gruntwork-io/terragrunt-action@v2
-      - uses: fregante/setup-git-user@v2
-      - uses: cardinalby/git-get-release-action@v1
-      - uses: marvinpinto/action-automatic-releases@latest
-      - uses: jwgmeligmeyling/checkstyle-github-action@master
-      - uses: shivammathur/setup-php@v2
-      - uses: php-actions/composer@v6
-      - uses: golangci/golangci-lint-action@v6
-      - uses: madrapps/jacoco-report@v1.7.1
-      - uses: maxim-lobanov/setup-xcode@v1.5.1
-      - uses: googleapis/release-please-action@v4
-      - uses: mikepenz/action-junit-report@v2
-      - uses: stefanzweifel/git-auto-commit-action@v6
-      - uses: devops-infra/action-commit-push@master
-      - uses: jtalk/url-health-check-action@v3
-      - uses: 8398a7/action-slack@v3
-      - uses: maxim-lobanov/setup-cocoapods@v1
-      - uses: yokawasa/action-setup-kube-tools@v0.11.2
-      - uses: ataylorme/eslint-annotate-action@1.2.0
-      - uses: anothrNick/github-tag-action@1.67.0
-      - uses: tj-actions/glob@v22
-      - uses: softprops/action-gh-release@v2.2.2
-      - uses: flatherskevin/semver-action@v1
+      - name: Harden the runner (Audit all outbound calls)
+        uses: step-security/harden-runner@ec9f2d5744a09debf3a187a3f4f675c53b671911 # v2.13.0
+        with:
+          egress-policy: audit
+
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: peter-evans/repository-dispatch@ce5485de42c9b2622d2ed064be479e8ed65e76f4 # v1.1.3
+      - uses: peter-evans/repository-dispatch@ff45666b9427631e3450c54a1bcbee4d9ff4d7c0 # v3.0.0
+      - uses: EndBug/add-and-commit@a988073222b8bd50f3ecfca9c0ab7dfbf0d08ceb # v4.4.0
+      - uses: EndBug/add-and-commit@a94899bca583c204427a224a7af87c02f9b325d5 # v9.1.4
+      - uses: ncipollo/release-action@b7eabc95ff50cbeeedec83973935c8f306dfcd0b # v1.20.0
+      - uses: machine-learning-apps/actions-app-token@b5f0e20a640a9d046e57e5cbbb60159c18c2078c # 0.21
+      - uses: peter-evans/repository-dispatch@bf47d102fdb849e755b0b0023ea3e81a44b6f570 # v2.1.2
+      - uses: bridgecrewio/checkov-action@785517c1aa34c033828b1aa855b5adb57fcf238f # master
+      - uses: trstringer/manual-approval@9f5e5d6bc511762e17f849775a3c56bdea6b4493 # v1.11.0
+      - uses: ad-m/github-push-action@77c5b412c50b723d2a4fbc6d71fb5723bcd439aa # master
+      - uses: stCarolas/setup-maven@07fbbe97d97ef44336b7382563d66743297e442f # v4.5
+      - uses: stCarolas/setup-maven@d6af6abeda15e98926a57b5aa970a96bb37f97d1 # v5
+      - uses: sbt/setup-sbt@17575ea4e18dd928fe5968dbe32294b97923d65b # v1.1.13
+      - uses: peter-evans/create-pull-request@18f7dc018cc2cd597073088f7c7591b9d1c02672 # v3.14.0
+      - uses: repo-sync/pull-request@7e79a9f5dc3ad0ce53138f01df2fad14a04831c5 # v2.12.1
+      - uses: EnricoMi/publish-unit-test-result-action@dc4b2f22e07d0995dffe65daf902598f695e8827 # v1.25
+      - uses: dawidd6/action-download-artifact@268677152d06ba59fcec7a7f0b5d961b6ccd7e1e # v2.28.0
+      - uses: mikefarah/yq@6251e95af8df3505def48c71f3119836701495d6 # master
+      - uses: winterjung/comment@fda92dbcb5e7e79cccd55ecb107a8a3d7802a469 # v1.1.0
+      - uses: sonarsource/sonarqube-scan-action@5837ebfccaf5b347ae1783644ecff31e2bafa086 # master
+      - uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e # v7.0.8
+      - uses: vimtor/action-zip@5f1c4aa587ea41db1110df6a99981dbe19cee310 # v1
+      - uses: ibiqlik/action-yamllint@2576378a8e339169678f9939646ee3ee325e845c # v3.1.1
+      - uses: kentaro-m/task-completed-checker-action@15aa21278f36c35b1006de5c65efa6b04e7b02bf # v0.1.0
+      - uses: wagoid/commitlint-github-action@9763196e10f27aef304c9b8b660d31d97fce0f99 # v5.5.1
+      - uses: robinraju/release-downloader@efa4cd07bd0195e6cc65e9e30c251b49ce4d3e51 # v1.8
+      - uses: fjogeleit/yaml-update-action@04ff6ec06568fd21197db746472e36cc425de850 # main
+      - uses: sonarsource/sonarqube-quality-gate-action@cf038b0e0cdecfa9e56c198bbb7d21d751d62c3b # master
+      - uses: stefanzweifel/git-auto-commit-action@b863ae1933cb653a53c021fe36dbb774e1fb9403 # v5.2.0
+      - uses: romeovs/lcov-reporter-action@9f75fe6f72f1d8b0822399a67d439c91d7ca194b # v0.2.21
+      - uses: peter-evans/find-comment@3eae4d37986fb5a8592848f6a574fdf654e61f9e # v3.1.0
+      - uses: dorny/paths-filter@de90cc6fb38fc0963ad72b210f1f284cd68cea36 # v3.0.2
+      - uses: abinoda/slack-action@master
+      - uses: meeDamian/github-release@7ae19492500104f636b3fee4d8103af0fed36c8e # v2.0.3
+      - uses: stCarolas/setup-maven@1d56b37995622db66cce1214d81014b09807fb5a # v4
+      - uses: peter-evans/create-or-update-comment@71345be0265236311c031f5c7866368bd1eff043 # v4.0.0
+      - uses: mathieudutour/github-tag-action@fcfbdceb3093f6d85a3b194740f8c6cec632f4e2 # v6.1
+      - uses: gsactions/commit-message-checker@b88ee88552f16f594ca19cb2c7fcd90df95c9bd4 # v1.0.1
+      - uses: stCarolas/setup-maven@7060d72b50fbf2389a16d6f66a9c7d4d9ece5d36 # v4.2
+      - uses: peter-evans/create-or-update-comment@a35cf36e5301d70b76f316e867e7788a55a31dae # v1.4.5
+      - uses: gsactions/commit-message-checker@16fa2d5de096ae0d35626443bcd24f1e756cafee # v2.0.0
+      - uses: dorny/test-reporter@d61b558e8df85cb60d09ca3e5b09653b4477cea7 # v1
+      - uses: stCarolas/setup-maven@417e1a9899611c0350621d1fb0c2770f35105c69 # v4.4
+      - uses: thedoctor0/zip-release@b57d897cb5d60cb78b51a507f63fa184cfe35554 # 0.7.6
+      - uses: peter-evans/create-pull-request@4e1beaa7521e8b457b572c090b25bd3db56bf1c5 # v5.0.3
+      - uses: robinraju/release-downloader@368754b9c6f47c345fcfbf42bcb577c2f0f5f395 # v1.9
+      - uses: cardinalby/git-tag-action@259f59f4bdf971ac5b25d44d674ea640d80d0d6e # master
+      - uses: thedoctor0/zip-release@78b32010bd8b7722906817a1f9e2a7190a182d0c # main
+      - uses: EnricoMi/publish-unit-test-result-action@075b72a534b796e14530fbd46e5717c4496672d1 # v1.5
+      - uses: dev-drprasad/delete-tag-and-release@82600feb9527126eca69833f07bafe53279bd9b4 # v1.1
+      - uses: dawidd6/action-send-mail@6d98ae34d733f9a723a9e04e94f2f24ba05e1402 # v6
+      - uses: dflook/terraform-fmt@c6e82d524f3ef6f84ba00b8fec05940c4b60bbed # v1.49.0
+      - uses: bridgecrewio/checkov-action@785517c1aa34c033828b1aa855b5adb57fcf238f # v12.3057.0
+      - uses: thollander/actions-comment-pull-request@fabd468d3a1a0b97feee5f6b9e499eab0dd903f6 # v2.5.0
+      - uses: mikepenz/release-changelog-builder-action@c9dc8369bccbc41e0ac887f8fd674f5925d315f7 # v5.4.1
+      - uses: shioyang/check-pr-labels-on-push-action@6902edf856909c50ff1d69b2cd7dc0d82f1061b6 # v1.0.3
+      - uses: montudor/action-zip@a8e75c9faefcd80fac3baf53ef40b9b119d5b702 # v1
+      - uses: mikepenz/action-junit-report@150e2f992e4fad1379da2056d1d1c279f520e058 # v3.8.0
+      - uses: peter-evans/find-comment@d2dae40ed151c634e4189471272b57e76ec19ba8 # v1.3.0
+      - uses: peaceiris/actions-gh-pages@373f7f263a76c20808c831209c920827a82a2847 # v3.9.3
+      - uses: peter-evans/find-comment@a54c31d7fa095754bfef525c0c8e5e5674c4b4b1 # v2.4.0
+      - uses: srggrs/assign-one-project-github-action@ee9e04cf29076579440cf7a149b0d5647467dc5b # 1.2.0
+      - uses: hmarr/auto-approve-action@8f929096a962e83ccdfa8afcf855f39f12d4dac7 # v4
+      - uses: xt0rted/pull-request-comment-branch@d97294d304604fa98a2600a6e2f916a84b596dc7 # v2.0.0
+      - uses: pascalgn/automerge-action@7961b8b5eec56cc088c140b56d864285eabd3f67 # v0.16.4
+      - uses: amannn/action-semantic-pull-request@e32d7e603df1aa1ba07e981f2a23455dee596825 # v5
+      - uses: rogerluan/label-remover@92abf197094ff354b296a1629c0452bd79462710 # v1.0.1
+      - uses: maxim-lobanov/setup-xcode@60606e260d2fc5762a71e64e74b2174e8ea3c8bd # v1.6.0
+      - uses: peter-evans/close-pull@a192af8d70f2d49c49643134605c3b73d4f80fae # v3.0.1
+      - uses: venkatsarvesh/pr-tasks-completed-action@2ea30c6d3cd857b7352f73adf04df90cc878ba60 # v1.0.0
+      - uses: robinraju/release-downloader@daf26c55d821e836577a15f77d86ddc078948b05 # v1.12
+      - uses: mikepenz/release-changelog-builder-action@32e3c96f29a6532607f638797455e9e98cfc703d # v4.2.2
+      - uses: juliangruber/merge-pull-request-action@d4773803fdc1d1fd46801ab0c56c135df9075de8 # v1.1.1
+      - uses: cicirello/jacoco-badge-generator@72266185b7ee48a6fd74eaf0238395cc8b14fef8 # v2.12.1
+      - uses: thollander/actions-comment-pull-request@65f9e5c9a1f2cd378bd74b2e057c9736982a8e74 # v3
+      - uses: terraform-linters/setup-tflint@90f302c255ef959cbfb4bd10581afecdb7ece3e6 # v4.1.1
+      - uses: stefanzweifel/git-auto-commit-action@3ea6ae190baf489ba007f7c92608f33ce20ef04a # v4.16.0
+      - uses: benjefferies/branch-protection-bot@958128d33ada137a4c6012f838fc7c914c999190 # master
+      - uses: TimonVS/pr-labeler-action@f9c084306ce8b3f488a8f3ee1ccedc6da131d1af # v5.0.0
+      - uses: the-actions-org/workflow-dispatch@3133c5d135c7dbe4be4f9793872b6ef331b53bc7 # v4.0.0
+      - uses: pnpm/action-setup@a7487c7e89a18df4991f7f222e4898a00d66ddda # v4.1.0
+      - uses: deployphp/action@6242095e7207facf115ac4439760356bc52760ac # v1.0.23
+      - uses: madrapps/jacoco-report@db72e7e7c96f98d239967958b0a0a6ca7d3bb45f # v1.6.1
+      - uses: marocchino/sticky-pull-request-comment@efaaab3fd41a9c3de579aba759d2552635e590fd # v2.8.0
+      - uses: flowwer-dev/pull-request-stats@0dde6edf8b7db75684533021212c6e85fb987dbb # master
+      - uses: hmarr/auto-approve-action@7d0ab8fdbb906da8a6297d373561d5ccb137d98f # v3
+      - uses: mikepenz/action-junit-report@150e2f992e4fad1379da2056d1d1c279f520e058 # v3.8.0
+      - uses: EndBug/add-and-commit@72e246094f1af94def5a07467cd789c503ae8be0 # v8.0.2
+      - uses: act10ns/slack@87c73aef9f8838eb6feae81589a6b1487a4a9e08 # v1.6.0
+      - uses: juliangruber/approve-pull-request-action@f83b836abaed1b3ab639ae61f9117c52ae405f65 # v1
+      - uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6.1.0
+      - uses: cycjimmy/semantic-release-action@16ca923e6ccbb50770c415a0ccd43709a8c5f7a4 # v4.2.2
+      - uses: peter-evans/create-pull-request@38e0b6e68b4c852a5500a94740f0e535e0d7ba54 # v4.2.4
+      - uses: joelwmale/webhook-action@cc1a66f987e1591785273fd6f9d2f7a9d8d7c9cd # 2.4.1
+      - uses: Sibz/github-status-action@faaa4d96fecf273bd762985e0e7f9f933c774918 # v1.1.0
+      - uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407 # v3.2.2
+      - uses: cloudflare/wrangler-action@da0e0dfe58b7a431659754fdf3f186c529afbe65 # v3.14.1
+      - uses: gruntwork-io/terragrunt-action@9559e51d05873b0ea467c42bbabcb5c067642ccc # v2.1.5
+      - uses: fregante/setup-git-user@024bc0b8e177d7e77203b48dab6fb45666854b35 # v2.0.2
+      - uses: cardinalby/git-get-release-action@cf4593dd18e51a1ecfbfb1c68abac9910a8b1e0c # v1
+      - uses: marvinpinto/action-automatic-releases@d68defdd11f9dcc7f52f35c1b7c236ee7513bcc1 # latest
+      - uses: jwgmeligmeyling/checkstyle-github-action@a12be500c097a5cedab881d4785ef9b4a4d3ee6a # master
+      - uses: shivammathur/setup-php@ec406be512d7077f68eed36e63f4d91bc006edc4 # v2
+      - uses: php-actions/composer@8a65f0d3c6a1d17ca4800491a40b5756a4c164f3 # v6.1.2
+      - uses: golangci/golangci-lint-action@55c2c1448f86e01eaae002a5a3a9624417608d84 # v6.5.2
+      - uses: madrapps/jacoco-report@7c362aca34caf958e7b1c03464bd8781db9f8da7 # v1.7.1
+      - uses: maxim-lobanov/setup-xcode@9a697e2b393340c3cacd97468baa318e4c883d98 # v1.5.1
+      - uses: googleapis/release-please-action@c2a5a2bd6a758a0937f1ddb1e8950609867ed15c # v4.3.0
+      - uses: mikepenz/action-junit-report@127c778ac944abc0f48a5103964304bab7eb208b # v2.9.1
+      - uses: stefanzweifel/git-auto-commit-action@778341af668090896ca464160c2def5d1d1a3eb0 # v6.0.1
+      - uses: devops-infra/action-commit-push@4b584b8e9fe1861fc6b1c933a02543a15fc0f6a3 # master
+      - uses: jtalk/url-health-check-action@fc2fe2a9ca9c9734d992431b749b79350d771fbb # v3.2
+      - uses: 8398a7/action-slack@1750b5085f3ec60384090fb7c52965ef822e869e # v3.18.0
+      - uses: maxim-lobanov/setup-cocoapods@8e97e1e98e6ccf42564fdf5622c8feec74199377 # v1.4.0
+      - uses: yokawasa/action-setup-kube-tools@9e25a4277af127b60011c95b6ed2da7e3b3613b1 # v0.11.2
+      - uses: ataylorme/eslint-annotate-action@a1bf7cb320a18aa53cb848a267ce9b7417221526 # 1.2.0
+      - uses: anothrNick/github-tag-action@a2c70ae13a881faf2b4953baaa9e49731997ab36 # 1.67.0
+      - uses: tj-actions/glob@2deae40528141fc53131606d56b4e4ce2a486b29 # v22.0.2
+      - uses: softprops/action-gh-release@da05d552573ad5aba039eaac05058a918a7bf631 # v2.2.2
+      - uses: flatherskevin/semver-action@fc3c4e67353e3c45b8164521ddd17c9e38d6d4d8 # v1
       - uses: jdx/mise-action@c37c93293d6b742fc901e1406b8f764f6fb19dac
-      - uses: TimonVS/pr-labeler-action@v3
-      - uses: hadolint/hadolint-action@v3.1.0
-      - uses: JamesIves/github-pages-deploy-action@3.6.2
-      - uses: devops-infra/action-pull-request@master
-      - uses: kenchan0130/actions-system-info@master
-      - uses: TimonVS/pr-labeler-action@v4
-      - uses: addnab/docker-run-action@v3
-      - uses: anothrNick/github-tag-action@1.36.0
-      - uses: peter-evans/create-or-update-comment@v3
-      - uses: JamesIves/github-pages-deploy-action@v4
-      - uses: marocchino/sticky-pull-request-comment@v2
-      - uses: mshick/add-pr-comment@v2
-      - uses: szenius/set-timezone@v1.0
-      - uses: tj-actions/glob@v16
-      - uses: tj-actions/changed-files@v46
-      - uses: anothrNick/github-tag-action@1.61.0
-      - uses: imjasonh/setup-crane@v0.1
-      - uses: juliangruber/read-file-action@v1
-      - uses: mikepenz/action-junit-report@v3.7.1
+      - uses: TimonVS/pr-labeler-action@bd0b592a410983316a454e3d48444608f028ec8e # v3.1.0
+      - uses: hadolint/hadolint-action@54c9adbab1582c2ef04b2016b760714a4bfde3cf # v3.1.0
+      - uses: JamesIves/github-pages-deploy-action@e80c869f0057899fc2cd28819b5bbe9de890524a # 3.6.2
+      - uses: devops-infra/action-pull-request@16a3a68f0b9368227271a4b9f3766c726b50a575 # master
+      - uses: kenchan0130/actions-system-info@5dff120542a6787614d15360f5218694657f0a93 # master
+      - uses: TimonVS/pr-labeler-action@8b99f404a073744885d8021d1de4e40c6eaf38e2 # v4.1.1
+      - uses: addnab/docker-run-action@4f65fabd2431ebc8d299f8e5a018d79a769ae185 # v3
+      - uses: anothrNick/github-tag-action@ce4b5ffa38e072fa7a901e417253c438fcc2ccce # 1.36.0
+      - uses: peter-evans/create-or-update-comment@23ff15729ef2fc348714a3bb66d2f655ca9066f2 # v3.1.0
+      - uses: JamesIves/github-pages-deploy-action@6c2d9db40f9296374acc17b90404b6e8864128c8 # v4.7.3
+      - uses: marocchino/sticky-pull-request-comment@773744901bac0e8cbb5a0dc842800d45e9b2b405 # v2.9.4
+      - uses: flutter-global/pokernews-gh-actions/test@main
+      - uses: mshick/add-pr-comment@b8f338c590a895d50bcbfa6c5859251edc8952fc # v2.8.2
+      - uses: flutter-global/pokernews-gh-actions/lint@main
+      - uses: szenius/set-timezone@dd47655c84241eec2ffa0a855959c16c0920c3c4 # v1.0
+      - uses: tj-actions/glob@825a28bd3761909f83c56df3a13ccd5dbfa367b6 # v16.14
+      - uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c # v46.0.5
+      - uses: anothrNick/github-tag-action@8c8163ef62cf9c4677c8e800f36270af27930f42 # 1.61.0
+      - uses: imjasonh/setup-crane@5146f708a817ea23476677995bf2133943b9be0b # v0.1
+      - uses: juliangruber/read-file-action@b549046febe0fe86f8cb4f93c24e284433f9ab58 # v1.1.7
+      - uses: mikepenz/action-junit-report@7210fead7f92f6395c37241964df3b0f730f5e4e # v3.7.1
       - uses: thollander/actions-comment-pull-request@a56dba33e68edfb2362e4aadfb98ae419733a630
-      - uses: fjogeleit/http-request-action@v1
-      - uses: madrapps/jacoco-report@v1.2
-      - uses: olafurpg/setup-scala@v10
-      - uses: dorny/paths-filter@v2
-      - uses: jwalton/gh-docker-logs@v2
-      - uses: tj-actions/changed-files@v45.0.8
-      - uses: pnpm/action-setup@v3
-      - uses: dominikh/staticcheck-action@v1.3.0
-      - uses: shioyang/check-pr-labels-on-push-action@v1.0.9
-      - uses: devops-infra/action-pull-request@v0.5.5
-      - uses: jtalk/url-health-check-action@v3.2
-      - uses: wzieba/Firebase-Distribution-Github-Action@v1.7.1
-      - uses: shimataro/ssh-key-action@v2
-      - uses: softprops/action-gh-release@v2
-      - uses: golangci/golangci-lint-action@v7
-      - uses: dawidd6/action-send-mail@v3
-      - uses: ataylorme/eslint-annotate-action@2.2.0
-      - uses: alexellis/arkade-get@master
-      - uses: karancode/yamllint-github-action@master
-      - uses: peaceiris/actions-gh-pages@v4
-      - uses: dtolnay/rust-toolchain@stable
+      - uses: fjogeleit/http-request-action@bf78da14118941f7e940279dd58f67e863cbeff6 # v1.16.3
+      - uses: madrapps/jacoco-report@fd4800e8a81e21bdf373438e5918b975df041d15 # v1.2
+      - uses: olafurpg/setup-scala@a2db88fb5c57396fbc1ff29a4bb0420072a3d6d8 # v10
+      - uses: dorny/paths-filter@4512585405083f25c027a35db413c2b3b9006d50 # v2.11.1
+      - uses: jwalton/gh-docker-logs@2741064ab9d7af54b0b1ffb6076cf64c16f0220e # v2.2.2
+      - uses: tj-actions/changed-files@a284dc1814e3fd07f2e34267fc8f81227ed29fb8 # v45.0.8
+      - uses: pnpm/action-setup@a3252b78c470c02df07e9d59298aecedc3ccdd6d # v3.0.0
+      - uses: dominikh/staticcheck-action@ba605356b4b29a60e87ab9404b712f3461e566dc # v1.3.0
+      - uses: shioyang/check-pr-labels-on-push-action@ac674473adfe36c785eee0926fee822ac9e2bf38 # v1.0.9
+      - uses: devops-infra/action-pull-request@e66e2ba93519dc63b9884a26e620e2fd0cffab2c # v0.5.5
+      - uses: jtalk/url-health-check-action@fc2fe2a9ca9c9734d992431b749b79350d771fbb # v3.2
+      - uses: wzieba/Firebase-Distribution-Github-Action@bd494989dd4bec0343f78adee87fe66e48279ad6 # v1.7.1
+      - uses: shimataro/ssh-key-action@d4fffb50872869abe2d9a9098a6d9c5aa7d16be4 # v2.7.0
+      - uses: flutter-global/pokernews-gh-actions/setup-node@main
+      - uses: softprops/action-gh-release@6cbd405e2c4e67a21c47fa9e383d020e4e28b836 # v2.3.3
+      - uses: golangci/golangci-lint-action@9fae48acfc02a90574d7c304a1758ef9895495fa # v7.0.1
+      - uses: dawidd6/action-send-mail@4226df7daafa6fc901a43789c49bf7ab309066e7 # v3.11.0
+      - uses: ataylorme/eslint-annotate-action@5f4dc2e3af8d3c21b727edb597e5503510b1dc9c # 2.2.0
+      - uses: alexellis/arkade-get@fa4deee60df15dea0587ce92fde1df030812b4cb # master
+      - uses: karancode/yamllint-github-action@4052d365f09b8d34eb552c363d1141fd60e2aeb2 # master
+      - uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4.0.0
+      - uses: dtolnay/rust-toolchain@5d458579430fc14a04a08a1e7d3694f545e91ce6 # stable
       - uses: softprops/action-gh-release@c95fe1489396fe8a9eb87c0abf8aa5b2ef267fda
-      - uses: tj-actions/verify-changed-files@v17
-      - uses: peter-evans/create-or-update-comment@v2
-      - uses: r0adkll/upload-google-play@v1
-      - uses: tj-actions/verify-changed-files@v20
-      - uses: chrisdickinson/setup-yq@latest
-      - uses: juliangruber/approve-pull-request-action@v2
-      - uses: irongut/CodeCoverageSummary@v1.3.0
-      - uses: 3dwardCh3nG/delete-from-s3-action@v1
-      - uses: endre-spotlab/fast-forward-js-action@master
-      - uses: amannn/action-semantic-pull-request@v4.5.0
-      - uses: marocchino/sticky-pull-request-comment@v2.1.0
-      - uses: ahmadnassri/action-dependabot-auto-merge@v2.3.1
-      - uses: rymndhng/release-on-push-action@v0.28.0
-      - uses: tj-actions/branch-names@v7.0.7
-      - uses: dawidd6/action-download-artifact@v4
-      - uses: simple-elf/allure-report-action@master
-      - uses: peterjgrainger/action-create-branch@v2.0.1
-      - uses: rossjrw/pr-preview-action@v1
+      - uses: tj-actions/verify-changed-files@2acec78834cc690f70b3445712363fc314224127 # v17.1.0
+      - uses: peter-evans/create-or-update-comment@67dcc547d311b736a8e6c5c236542148a47adc3d # v2.1.1
+      - uses: r0adkll/upload-google-play@935ef9c68bb393a8e6116b1575626a7f5be3a7fb # v1.1.3
+      - uses: tj-actions/verify-changed-files@a1c6acee9df209257a246f2cc6ae8cb6581c1edf # v20.0.4
+      - uses: chrisdickinson/setup-yq@fa3192edd79d6eb0e4e12de8dde3a0c26f2b853b # latest
+      - uses: juliangruber/approve-pull-request-action@b71c44ff142895ba07fad34389f1938a4e8ee7b0 # v2.0.6
+      - uses: irongut/CodeCoverageSummary@51cc3a756ddcd398d447c044c02cb6aa83fdae95 # v1.3.0
+      - uses: 3dwardCh3nG/delete-from-s3-action@88103fb5bfc49222c6297ac78462275fe966c56a # v1.2.5
+      - uses: endre-spotlab/fast-forward-js-action@120daa24f99a19acecd7592dd71fe42a33963303 # master
+      - uses: amannn/action-semantic-pull-request@91682d013dea3ff257520b9b68c9cb93ced4fe9b # v4.5.0
+      - uses: marocchino/sticky-pull-request-comment@322a2451dae6c7831d1a8b931275a7f78147c888 # v2.1.0
+      - uses: ahmadnassri/action-dependabot-auto-merge@c0e574b9d8c2e0e029e8e8d1d44b13ffbfd14f0a # v2.3.1
+      - uses: rymndhng/release-on-push-action@aebba2bbce07a9474bf95e8710e5ee8a9e922fe2 # v0.28.0
+      - uses: tj-actions/branch-names@6c999acf206f5561e19f46301bb310e9e70d8815 # v7.0.7
+      - uses: dawidd6/action-download-artifact@854e2de9396304899dbe03bf9995fd73533190d1 # v4
+      - uses: simple-elf/allure-report-action@53ebb757a2097edc77c53ecef4d454fc2f2f774c # master
+      - uses: peterjgrainger/action-create-branch@b48b0ca0e307c9b56f059b70274984ffeaa90a43 # v2.0.1
+      - uses: rossjrw/pr-preview-action@9f77b1d057b494e662c50b8ca40ecc63f21e0887 # v1.6.2
       - uses: golangci/golangci-lint-action@4afd733a84b1f43292c63897423277bb7f4313a9
-      - uses: rexebin/next-nuget-package-version@v1.0.0
-      - uses: commitizen-tools/commitizen-action@master
-      - uses: dflook/terraform-fmt@v1.41.0
-      - uses: tj-actions/changed-files@v42
-      - uses: deblockt/cucumber-report-annotations-action@v1.11
-      - uses: opcr-io/policy-push-action@v3
-      - uses: koistya/linked-pr@v1
-      - uses: snok/container-retention-policy@v3.0.0
-      - uses: opcr-io/policy-tag-action@v3
-      - uses: opcr-io/policy-logout-action@v3
-      - uses: opcr-io/policy-login-action@v3
-      - uses: opcr-io/policy-build-action@v4
-      - uses: Mattraks/delete-workflow-runs@v2
-      - uses: Swatinem/rust-cache@v2.7.8
-      - uses: issue-ops/parser@v4
-      - uses: mikefarah/yq@v4.44.3
-      - uses: snnaplab/get-labels-action@v1
-      - uses: issue-ops/validator@v3
-      - uses: golangci/golangci-lint-action@v4
-      - uses: mikefarah/yq@v4.33.3
-      - uses: pragmatic-tools/pr-title-validator@1.0.0
-      - uses: deblockt/cucumber-report-annotations-action@v1.7
+      - uses: rexebin/next-nuget-package-version@87e422fa5808a1bebdfd1e85f9fa65bebfc8b4ef # v1.0.0
+      - uses: commitizen-tools/commitizen-action@5b0848cd060263e24602d1eba03710e056ef7711 # master
+      - uses: dflook/terraform-fmt@ddbe6da97411346cbd7d896892958daccb216c41 # v1.41.0
+      - uses: tj-actions/changed-files@ac21d93904fb48e7f76ce4bd2a4d197f67e34abe # v42.0.1
+      - uses: deblockt/cucumber-report-annotations-action@d45e6032f27de46edb8c8f771dc5994ff323d1b0 # v1.11
+      - uses: opcr-io/policy-push-action@1a2e3024f7d47c4350e3c99f6c6aa3e141df3675 # v3
+      - uses: koistya/linked-pr@014ff22be541b80dbfdf05fa2a1214ba8f8bc744 # v1
+      - uses: snok/container-retention-policy@4f22ef80902ad409ed55a99dc5133cc1250a0d03 # v3.0.0
+      - uses: opcr-io/policy-tag-action@e3149ec17339f96f106643867982afd38667a03c # v3
+      - uses: opcr-io/policy-logout-action@23cb5883541bf23c7dd11f932aadd68946a81495 # v3
+      - uses: opcr-io/policy-login-action@bf4cc154113fc8a2d1979661213ef9511276bee7 # v3
+      - uses: opcr-io/policy-build-action@4f356cd5d13ce0c6e36d13cc5ebfc267689b65ba # v4
+      - uses: Mattraks/delete-workflow-runs@feeb82053ea847a97fe4ee2aa314c94eac0eff04 # v2
+      - uses: Swatinem/rust-cache@9d47c6ad4b02e050fd481d890b2ea34778fd09d6 # v2.7.8
+      - uses: issue-ops/parser@76d5aa095754de1493cbe41934484c4287e16350 # v4.2.0
+      - uses: mikefarah/yq@bbdd97482f2d439126582a59689eb1c855944955 # v4.44.3
+      - uses: snnaplab/get-labels-action@f426df40304808ace3b5282d4f036515f7609576 # v1.0.1
+      - uses: issue-ops/validator@67329c9b82935865e526f57d2f74569039dfcfe3 # v3.3.0
+      - uses: flutter-global/pokernews-gh-actions/setup-yarn@main
+      - uses: golangci/golangci-lint-action@d6238b002a20823d52840fda27e2d4891c5952dc # v4.0.1
+      - uses: mikefarah/yq@d2f1ae9db722ac6b0702dd7f8a08dd22722d8c2d # v4.33.3
+      - uses: pragmatic-tools/pr-title-validator@1d9c6e76972853e67b2be9cc8b121d3e7afe3ca6 # 1.0.0
+      - uses: deblockt/cucumber-report-annotations-action@152244262905d9ce2b17889606535ede6c9ab79b # v1.7
       - uses: peter-evans/create-pull-request@271a8d0340265f705b14b6d32b9829c1cb33d45e
       - uses: issue-ops/parser@76d5aa095754de1493cbe41934484c4287e16350
       - uses: tj-actions/changed-files@2f7c5bfce28377bc069a65ba478de0a74aa0ca32
-      - uses: mr-smithers-excellent/docker-build-push@v6
-      - uses: guilhermetod/semantic-release-notes-preview@v1.0.0
-      - uses: insightsengineering/coverage-action@v3
-      - uses: cachix/install-nix-action@v27
-      - uses: xt0rted/pull-request-comment-branch@v3
+      - uses: mr-smithers-excellent/docker-build-push@a4dc055191e5c80b01c04d2525d545efb5712b2b # v6.7
+      - uses: guilhermetod/semantic-release-notes-preview@015a2c1849e7703ee43e0350b04970ae3a76b49d # v1.0.0
+      - uses: insightsengineering/coverage-action@50449af77a423ca017bf5496a6711db404d31811 # v3.0.1
+      - uses: cachix/install-nix-action@ba0dd844c9180cbf77aa72a116d6fbc515d0e87b # v27
+      - uses: xt0rted/pull-request-comment-branch@e8b8daa837e8ea7331c0003c9c316a64c6d8b0b1 # v3.0.0
       - uses: tj-actions/changed-files@0b975f61488402a699abcebd6a1e25924cf85218
-      - uses: opcr-io/policy-build-action@v3
-      - uses: nick-fields/assert-action@v2
-      - uses: softprops/action-gh-release@v2.3.2
-      - uses: renovatebot/github-action@v41.0.21
-      - uses: mathieudutour/github-tag-action@v5.5
-      - uses: clowdhaus/argo-cd-action/@v3.0.0
+      - uses: opcr-io/policy-build-action@45fdf46a0f48b8dafc69cfb0289ae036de366680 # v3
+      - uses: nick-fields/assert-action@aa0067e01f0f6545c31755d6ca128c5a3a14f6bf # v2.0.0
+      - uses: softprops/action-gh-release@72f2c25fcb47643c292f7107632f7a47c1df5cd8 # v2.3.2
+      - uses: renovatebot/github-action@fdbe2b88946ea8b6fb5785a5267b46677d13a4d2 # v41.0.21
+      - uses: mathieudutour/github-tag-action@331898d5052eedac9b15fec867b5ba66ebf9b692 # v5.5
+      - uses: clowdhaus/argo-cd-action/@030da61d6d893fff21bb46a86a5ccd26a2dad8b2 # v3.0.0
       - uses: tj-actions/changed-files@ed68ef82c095e0d48ec87eccea555d944a631a4c
-      - uses: JamesIves/github-pages-deploy-action@v4.6.9
-      - uses: renovatebot/github-action@v43.0.2
-      - uses: renovatebot/github-action@v41.0.22
-      - uses: nick-fields/retry@v3
-      - uses: einaregilsson/beanstalk-deploy@v21
-      - uses: cedx/setup-ant@v4
+      - uses: JamesIves/github-pages-deploy-action@62fec3add6773ec5dbbf18d2ee4260911aa35cf4 # v4.6.9
+      - uses: renovatebot/github-action@13da59cf7cfbd3bfea72ce26752ed22edf747ce9 # v43.0.2
+      - uses: renovatebot/github-action@8ac70de2fe55752c573155866e30735411e3b61c # v41.0.22
+      - uses: nick-fields/retry@ce71cc2ab81d554ebbe88c79ab5975992d79ba08 # v3.0.2
+      - uses: einaregilsson/beanstalk-deploy@18e5b85bd914cabf00fccabe72f60b8757dcd3cb # v21
+      - uses: cedx/setup-ant@1ea448efb6c44f086dce6e3634cfd1a5bcc3aeb9 # v4.2.0
       - uses: golangci/golangci-lint-action@55c2c1448f86e01eaae002a5a3a9624417608d84
-      - uses: d3adb5/helm-unittest-action@v2
-      - uses: robinraju/release-downloader@v1.12
-      - uses: losisin/helm-docs-github-action@v1
-      - uses: Slashgear/action-check-pr-title@v3.0.0
-      - uses: hoverkraft-tech/compose-action@v2.2.0
-      - uses: davideviolante/pr-automerge-action@v1.4.0
-      - uses: martinbeentjes/npm-get-version-action@v1.3.1
+      - uses: d3adb5/helm-unittest-action@850bc76597579183998069830d5fa8c3ef0ea34a # v2.5.0
+      - uses: robinraju/release-downloader@daf26c55d821e836577a15f77d86ddc078948b05 # v1.12
+      - uses: losisin/helm-docs-github-action@a57fae5676e4c55a228ea654a1bcaec8dd3cf5b5 # v1.6.2
+      - uses: Slashgear/action-check-pr-title@3dc601455ee2e3f5bf1e8e7cf31261ebdd4e1756 # v3.0.0
+      - uses: hoverkraft-tech/compose-action@8be2d741e891ac9b8ac20825e6f3904149599925 # v2.2.0
+      - uses: davideviolante/pr-automerge-action@c420b69f95d665a67b373ae4e258033bfa20a808 # v1.4.0
+      - uses: martinbeentjes/npm-get-version-action@3cf273023a0dda27efcd3164bdfb51908dd46a5b # v1.3.1
       - uses: romeovs/lcov-reporter-action@2a28ec3e25fb7eae9cb537e9141603486f810d1a
       - uses: actions-tools/yaml-outputs@8a3d95c649e970fbe0fb68b11e21a64a9b7bb1b0
-      - uses: kv109/action-ready-for-review@0.2
+      - uses: kv109/action-ready-for-review@76820bc668c3ce6c9be0c9322d07c2d8804dbd7a # 0.2
       - uses: golang/govulncheck-action@b625fbe08f3bccbe446d94fbf87fcc875a4f50ee
-      - uses: limitusus/json-syntax-check@v1
-      - uses: peaceiris/actions-gh-pages@v2
-      - uses: SwiftyLab/setup-swift@latest
+      - uses: limitusus/json-syntax-check@2505a77aa5181d0d0f5b94cf5aaaf3abb07a2cb5 # v1.0.3
+      - uses: peaceiris/actions-gh-pages@45b43ab25725682861f953edbb911fe7f402a5b6 # v2.10.1
+      - uses: SwiftyLab/setup-swift@4cddd34632346064af993c2b7b32a58307b13dbc # latest
