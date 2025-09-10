@@ -63,7 +63,6 @@ jobs:
       - uses: dev-drprasad/delete-tag-and-release@v1.1
       - uses: dawidd6/action-send-mail@v6
       - uses: dflook/terraform-fmt@v1
-      - uses: bridgecrewio/checkov-action@v12
       - uses: thollander/actions-comment-pull-request@v2
       - uses: mikepenz/release-changelog-builder-action@v5
       - uses: shioyang/check-pr-labels-on-push-action@v1.0.3
