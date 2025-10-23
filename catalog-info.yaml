@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: testing-workflows
+  annotations:
+    github.com/project-slug: org-deac-test/testing-workflows
+spec:
+  type: other
+  lifecycle: unknown
+  owner: orgOwners
