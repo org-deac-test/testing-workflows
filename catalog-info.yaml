@@ -4,6 +4,7 @@ metadata:
   name: testing-workflows
   annotations:
     github.com/project-slug: org-deac-test/testing-workflows
+    backstage.io/techdocs-ref: value
 spec:
   type: other
   lifecycle: unknown
