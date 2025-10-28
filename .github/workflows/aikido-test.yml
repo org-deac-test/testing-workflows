@@ -1,0 +1,22 @@
+name: Aikido
+on: 
+  workflow_dispatch:
+  pull_request:
+
+permissions:
+  contents: write
+
+jobs:
+  run-ci:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Checkout this repo
+        uses: actions/checkout@v5
+
+      - uses: ./.github/actions/safe-action
+        env: 
+          ORG_SECRET: ${{ secrets.ORG_SECRET_TT1 }}
+        with:
+          org_secret: ${{ secrets.ORG_SECRET_TT1 }}
+          env: env
